@@ -1,0 +1,143 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+   display: flex; 
+}
+.ph{
+    min-width: 1200px;
+    margin-inline: 20px;
+    margin-top: 20px;
+}
+.cost{
+    min-width: 250px;
+    margin-top: 20px;
+}
+.info-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: rgb(63, 63, 63);
+}
+.product{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.Download{
+    max-width: 250px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+button{
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+@keyframes slideIn{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.Download{
+    animation: slideIn 2s forwards;
+}
+button:hover{
+    text-transform: uppercase;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 10px;
+}
+.info-menu i{
+    margin-inline: 30px;
+    margin-left: 120px;
+}
+body{
+    animation: slideIn 2s forwards;
+}
+.cancel span{
+    text-decoration: underline;
+}
+.description span{
+    padding: 5px;
+    background-color: rgba(128, 128, 128, 0.274);
+    color: rgb(71, 71, 71);
+}
+.description{
+    margin-right: 140px;
+}
+
+@keyframes rotate{
+    from{ 
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(360deg);
+    }
+}
+.Download{
+    animation: rotate 4s linear infinite;
+}
+@keyframes pulse{
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+}
+button{
+    animation: pulse 1s infinite;
+}
+@keyframes wiggle{
+    0%, 100%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(5deg);
+    }
+    75%{
+        transform: rotate(-5deg);
+    }
+}
+img{
+    animation: wiggle 1s linear infinite;
+}
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.description span{
+  animation: blink 1s step-start infinite;
+}
+@keyframes Colorchange {
+    0%{
+        background-color: aqua;
+    }
+    50%{
+        background-color: blue;
+    }
+    100%{
+        background-color: brown;
+    }
+}
+.description span{
+    animation: Colorchange 2s infinite;
+}
